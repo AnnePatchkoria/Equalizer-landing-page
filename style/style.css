@@ -12,8 +12,8 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "IBM Plex Sans", sans-serif;
 }
+/* mobile first web Design*/
 .main-content h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -24,8 +24,10 @@ body {
 
 .main-content {
   padding: 64px 24px 68px 24px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .content img {
+  width: 100%;
   padding: 40px 204.76px 0 24.15px;
 }
 .main-content p {
@@ -34,24 +36,30 @@ body {
   line-height: 1.625rem;
   color: var(--light-black);
   padding-top: 20px;
+  padding-bottom: 80px;
 }
 .content {
   background-image: url(../assets/bg-main-mobile.png);
   background-repeat: no-repeat;
-  background-position: top -250px right -200px;
+  background-position: -10% 130%;
 }
-.container-card {
+/*.container-card {
   background: var(--light-black);
-}
+}*/
+
+/* Main Content */
 .mobile-picture {
-  position: relative;
+  /*position: relative;*/
+  background: var(--light-black);
+  border-radius: 12px;
+  padding-bottom: 500px;
+  z-index: -1;
 }
 .mobile-picture .second-ilustartion {
   width: 280px;
   height: 420px;
   margin-left: 40px;
-  margin-bottom: -40px;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .container-card .first-ilustration {
@@ -60,6 +68,7 @@ body {
   position: absolute;
   z-index: 9;
   margin-left: 80px;
+  margin-top: -100px;
 }
 
 .premium {
@@ -68,6 +77,8 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   padding: 48px 37px;
   z-index: 999;
+  position: relative;
+  margin-top: -120px;
 }
 .premium h2 {
   font-size: 2rem;
@@ -118,7 +129,7 @@ button {
 }
 .button2 {
   background: var(--white);
-  padding: 15px 57px 14px 62.34px;
+  padding: 15px 57px 14px 59px;
 }
 .button1 img {
   padding-right: 7.92px;
@@ -142,12 +153,89 @@ button {
   padding-top: 32px;
   padding-bottom: 64px;
 }
-.address a{
-    font-weight: 700;
-    color: var(--light-black);
-    display: flex;
-    text-decoration: none;
+.address a {
+  font-weight: 700;
+  color: var(--light-black);
+  display: flex;
+  text-decoration: none;
 }
-.icons{
-    padding-right: 20px;
+.icons {
+  padding-right: 20px;
+}
+
+.button1:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+.button2:hover {
+  background: var(--yellow);
+  cursor: pointer;
+}
+.icons:hover path {
+  fill: var(--orange);
+  cursor: pointer;
+}
+
+/* Responsive web design for Tablet */
+
+@media screen and (min-width: 768px) {
+  .main-content h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.046rem;
+  }
+
+  .main-content {
+    padding: 95px 214px 111px 39px;
+  }
+  .content img {
+    padding: 62px 582.76px 0 39.15px;
+  }
+  .main-content p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-top: 28px;
+    padding-bottom: 111px;
+  }
+
+  .content {
+    background-image: url(../assets/bg-pattern-1.svg),
+      url(../assets/bg-main-tablet.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -30px right -40px, 110% 180%;
+    background-size: 266px 400px, 983px 808px;
+  }
+
+  .mobile-picture {
+    /*position: relative;*/
+    margin-left: 33px;
+    margin-right: 39px;
+    padding-bottom: 640px;
+    z-index: -1;
+  }
+  .mobile-picture .second-ilustartion {
+    margin-left: 229px;
+
+    position: absolute;
+    z-index: 1;
+  }
+  .container-card .first-ilustration {
+    width: 270px;
+    height: 556px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 64px;
+    margin-top: -100px;
+  }
+
+  .premium {
+    padding: 48px 49px;
+    z-index: 999;
+    position: relative;
+    margin-top: -450px;
+    margin-left: 272px;
+    width: 399px;
+  }
+
+
 }
