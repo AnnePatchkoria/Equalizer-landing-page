@@ -26,8 +26,8 @@ body {
   padding: 64px 24px 68px 24px;
   font-family: "IBM Plex Sans", sans-serif;
 }
+
 .content img {
-  width: 100%;
   padding: 40px 204.76px 0 24.15px;
 }
 .main-content p {
@@ -38,18 +38,16 @@ body {
   padding-top: 20px;
   padding-bottom: 80px;
 }
+
 .content {
   background-image: url(../assets/bg-main-mobile.png);
   background-repeat: no-repeat;
   background-position: -10% 130%;
 }
-/*.container-card {
-  background: var(--light-black);
-}*/
+
 
 /* Main Content */
 .mobile-picture {
-  /*position: relative;*/
   background: var(--light-black);
   border-radius: 12px;
   padding-bottom: 500px;
@@ -143,7 +141,6 @@ button {
 .main-footer {
   font-family: "IBM Plex Sans", sans-serif;
   padding: 64px 24px 80px;
-  z-index: 999;
 }
 .address {
   font-weight: 400;
@@ -207,7 +204,6 @@ button {
   }
 
   .mobile-picture {
-    /*position: relative;*/
     margin-left: 33px;
     margin-right: 39px;
     padding-bottom: 640px;
@@ -215,7 +211,9 @@ button {
   }
   .mobile-picture .second-ilustartion {
     margin-left: 229px;
-
+    margin-top: -40px;
+    width: 312px;
+    height: 468px;
     position: absolute;
     z-index: 1;
   }
@@ -236,6 +234,127 @@ button {
     margin-left: 272px;
     width: 399px;
   }
+  /* Footer */
+  .main-footer {
+    padding: 87px 39px 20px 33px;
+  }
+  .footer-content {
+    display: flex;
+  }
+  .address {
+    padding-top: 32px;
+    padding-right: 280px;
+  }
+  .address a {
+    display: inline;
+  }
+  .footer-icons {
+    display: flex;
+    padding-top: 94px;
+  }
+}
+/* Responsive web design for Desktop */
 
+@media screen and (min-width: 1024px) {
+  .main-content h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.063rem;
+  }
 
+  .main-content {
+    padding: 127px 260px 127px 165px;
+  }
+  .content img {
+    padding: 62px 815.76px 0 166.15px;
+  }
+  .main-content p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    padding-top: 40px;
+    padding-bottom: 127px;
+    padding-right: 190px;
+  }
+
+  .content {
+    background-image: url(../assets/bg-pattern-1.svg), none;
+    background-repeat: no-repeat;
+    background-position: top -30px right 2px;
+    background-size: 312px 468px;
+  }
+
+  body {
+    background-image: url(../assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 70% 110%;
+    background-size: 1913px 2058px;
+  }
+
+  .mobile-picture {
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-bottom: 600px;
+    width: 1110px;
+  }
+  .mobile-picture .second-ilustartion {
+    margin-left: 336px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .container-card .first-ilustration {
+    width: 312px;
+    height: 642px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 102px;
+    margin-top: -213px;
+  }
+
+  .premium {
+    padding: 58px 59px 48px 54px;
+    z-index: 999;
+    position: relative;
+    margin-top: -510px;
+    margin-left: 734px;
+    width: 446px;
+    height: 625px;
+  }
+  .premium h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  .premium p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    padding-top: 22px;
+    padding-bottom: 39px;
+  }
+  .price h1 {
+    line-height: 3.25rem;
+  }
+  .button1 {
+    padding: 15px 90px 14px 95px;
+  }
+  .button2 {
+    padding: 15px 75.5px 14px 74.5px;
+  }
+
+  /* Footer */
+  .main-footer {
+    display: flex;
+    padding: 0px 165px 0px 166.15px;
+  }
+  .main-footer img {
+    width: 146px;
+    height: 32px;
+    margin-top: 87px;
+  }
+  .address {
+    padding: 87px 359px 91px 137.76px;
+  }
+  .footer-icons {
+    padding-top: 116px;
+    padding-bottom: 121px;
+  }
 }
