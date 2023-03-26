@@ -8,6 +8,6 @@ Live site URL :  [Github Pages](https://annepatchkoria.github.io/Equalizer-landi
 ## Tablet Design
 ![Design preview for the Equalizer landing page coding challenge](./design/Tablet.png)
 ## Mobile Design
-![Design preview for the Equalizer landing page coding challenge](./design/Mobile.png.jpg)
+![Design preview for the Equalizer landing page coding challenge](./design/Mobile.png)
 
 
